@@ -1,3 +1,12 @@
+###################################################
+#                                                 #
+#            CISCO INVENTORY VERSION 7            #
+#            Developed by Carlos Lucas            #
+#                                                 #
+###################################################
+
+# GENERATE TECH SUPPORT FOR CISCO UCS BASED ON CSV
+
 $credential = get-credential
 foreach ($ucs in Import-Csv D:\CiscoUCS\ucs-domains.csv) {
     $ucs.ip
